@@ -1,0 +1,23 @@
+.lift {
+  width: 14vh;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.266);
+  position: relative;
+  transition: 1s;
+  top: 0px;
+}
+
+.zero {
+  top: 0px;
+}
+.one {
+  top: 200px;
+}
+.two {
+  top: 400px;
+}
+.three {
+  top: 600px;
+}
+/* .four {
+} */

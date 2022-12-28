@@ -1,0 +1,21 @@
+.lvls {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 800px;
+  justify-content: space-between;
+}
+.lvl {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border: solid 1px;
+}
+.lvl button {
+  color: aliceblue;
+  padding: 5px 10px;
+  background: #000;
+}
+
+.lvl button:active {
+  background: green;
+}
