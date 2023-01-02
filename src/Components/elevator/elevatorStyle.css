@@ -21,3 +21,12 @@
 }
 /* .four {
 } */
+
+.shaft {
+  height: 800px;
+  width: 14vh;
+  background: gray;
+  margin: 0 2vh;
+  display: flex;
+  align-items: start;
+}

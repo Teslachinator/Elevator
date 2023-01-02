@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./lvlBtnStyle.css";
 
-const LvlBtn = () => {
-  const [level, setLevel] = useState("");
-
+const LvlBtn = (props) => {
   const levels = [
     { lvl: 0, id: 0 },
     { lvl: 1, id: 1 },
@@ -12,10 +10,14 @@ const LvlBtn = () => {
   ];
 
   return (
-    <div className="lvls">
+    <div className="lvlBtn">
       {levels.map((levels) => (
         <div className="lvl">
-          <button key={levels.id} onClick={() => setLevel(levels.id)}>
+          <button
+            key={levels.id}
+            value={levels.lvl}
+            onClick={() => props.update(levels.lvl)}
+          >
             {levels.lvl}
           </button>
         </div>
